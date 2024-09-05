@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principle 3 - Early testing saves time and money</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="text-center p-5 bg-light">
+    <h1>Principle 3: Early testing saves time and money</h1>
+    <p class="lead">Understand the principle through this interactive example.</p>
+</header>
+
+<section class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6" data-aos="fade-up">
+            <div class="card p-4">
+                <h2 class="mb-3">Broken Components</h2>
+                <p>Notice the broken image and the unclickable button. These are defects that should have been caught early in development.</p>
+
+                <!-- Broken image -->
+                <img src="brokenimage.jpg" alt="Broken Image" style="width:100%; height:auto;">
+
+                <!-- Unclickable button -->
+                <button id="broken-button" class="btn btn-primary mt-3" disabled>Unclickable Button</button>
+
+                <!-- Explanation -->
+                <p class="mt-3 text-danger">These defects should have been detected early to avoid costly fixes later.</p>
+
+                <!-- Return to Main Page Button -->
+                <a href="index.html" class="btn btn-secondary mt-3">Return to Main Page</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="text-center p-4 bg-dark text-white mt-5">
+    <p>Copyright © Ouajdi Belhaj 2024</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<!-- GSAP JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script>
+    gsap.from("header", { duration: 1.5, opacity: 0, y: -50 });
+</script>
+</body>
+</html>

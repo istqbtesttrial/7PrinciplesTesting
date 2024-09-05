@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Principles of Testing</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="text-center p-5 bg-light">
+    <h1>Welcome to the 7 Principles of Testing</h1>
+    <p class="lead">Discover each principle through interactive examples.</p>
+</header>
+
+<section class="container">
+    <!-- First Row (3 principles) -->
+    <div class="row text-center mt-5">
+        <div class="col-md-4" data-aos="fade-up">
+            <i class="fas fa-bug fa-3x mb-3"></i>
+            <h2>Principle 1</h2>
+            <p>Testing shows the presence of defects, not their absence.</p>
+            <a href="principle1.html" class="btn btn-primary">Learn More</a>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <i class="fas fa-search fa-3x mb-3"></i>
+            <h2>Principle 2</h2>
+            <p>Exhaustive testing is impossible.</p>
+            <a href="principle2.html" class="btn btn-primary">Learn More</a>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <i class="fas fa-hourglass-half fa-3x mb-3"></i>
+            <h2>Principle 3</h2>
+            <p>Early testing saves time and money.</p>
+            <a href="principle3.html" class="btn btn-primary">Learn More</a>
+        </div>
+    </div>
+
+    <!-- Second Row (4 principles) -->
+    <div class="row text-center mt-5">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <i class="fas fa-layer-group fa-3x mb-3"></i>
+            <h2>Principle 4</h2>
+            <p>Defects cluster together.</p>
+            <a href="principle4.html" class="btn btn-primary">Learn More</a>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <i class="fas fa-sync-alt fa-3x mb-3"></i>
+            <h2>Principle 5</h2>
+            <p>The pesticide paradox.</p>
+            <a href="principle5.html" class="btn btn-primary">Learn More</a>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+            <i class="fas fa-cogs fa-3x mb-3"></i>
+            <h2>Principle 6</h2>
+            <p>Testing is context dependent.</p>
+            <a href="principle6.html" class="btn btn-primary">Learn More</a>
+        </div>
+    </div>
+
+    <!-- Last Row (1 principle) -->
+    <div class="row text-center mt-5">
+        <div class="col-md-4 offset-md-4" data-aos="fade-up" data-aos-delay="600">
+            <i class="fas fa-exclamation-triangle fa-3x mb-3"></i>
+            <h2>Principle 7</h2>
+            <p>Absence of errors is a fallacy.</p>
+            <a href="principle7.html" class="btn btn-primary">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<footer class="text-center p-4 bg-dark text-white mt-5">
+    <p>Copyright © Ouajdi Belhaj 2024</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<!-- GSAP JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script>
+    gsap.from("header", { duration: 1.5, opacity: 0, y: -50 });
+</script>
+</body>
+</html>

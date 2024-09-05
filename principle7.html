@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principle 7 - Absence of errors is a fallacy</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="text-center p-5 bg-light">
+    <h1>Principle 7: Absence of errors is a fallacy</h1>
+    <button id="hidden-button" onclick="revealHiddenBug()" style="opacity: 0; position: absolute; top: 20px; right: 20px;">Hidden Button</button>
+    <p class="lead">Understand the principle through this interactive example.</p>
+</header>
+
+<section class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6" data-aos="fade-up">
+            <div class="card p-4">
+                <h2 class="mb-3">Hidden Defects</h2>
+                <p>This button works fine on the surface, but hidden defects related to performance or security exist. Test beyond the visible functionality to reveal these issues.</p>
+
+                <!-- Submission Button -->
+                <button id="submit-button" class="btn btn-primary" onclick="submitForm()">Submit</button>
+                <p id="message" class="mt-3 text-success" style="display: none;">Form submitted successfully! No errors visible.</p>
+
+                <!-- Hidden issue that appears after further investigation -->
+                <p id="hidden-issue" class="text-danger mt-3" style="display: none;">Hidden defect found: Performance or security issue detected!</p>
+
+                <!-- Reveal hidden issue button -->
+                <button id="reveal-defect" class="btn btn-warning mt-3" onclick="revealDefect()" style="display: none;">Reveal Hidden Defect</button>
+
+                <!-- Hidden bug message -->
+                <p id="hidden-bug-message" class="text-danger mt-3" style="display: none;">This is a hidden bug!</p>
+
+                <!-- Return to Main Page Button -->
+                <a href="index.html" class="btn btn-secondary mt-3">Return to Main Page</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="text-center p-4 bg-dark text-white mt-5">
+    <p>Copyright © Ouajdi Belhaj 2024</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<!-- GSAP JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script>
+    gsap.from("header", { duration: 1.5, opacity: 0, y: -50 });
+</script>
+
+<!-- JavaScript for hidden defects and hidden button -->
+<script>
+    function submitForm() {
+        const message = document.getElementById('message');
+        const revealDefectButton = document.getElementById('reveal-defect');
+
+        // Show success message
+        message.style.display = 'block';
+
+        // Enable the button to reveal the hidden defect after submission
+        revealDefectButton.style.display = 'block';
+    }
+
+    function revealDefect() {
+        const hiddenIssue = document.getElementById('hidden-issue');
+
+        // Show hidden defect
+        hiddenIssue.style.display = 'block';
+    }
+
+    function revealHiddenBug() {
+        const hiddenBugMessage = document.getElementById('hidden-bug-message');
+
+        // Show hidden bug message
+        hiddenBugMessage.style.display = 'block';
+    }
+</script>
+</body>
+</html>

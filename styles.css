@@ -1,0 +1,24 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #f7f7f7;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.container {
+    padding: 20px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
